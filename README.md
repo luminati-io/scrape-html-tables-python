@@ -27,11 +27,11 @@ pip install requests beautifulsoup4 pandas
 
 In this tutorial, you'll scrape data from the [Worldometer website](https://www.worldometers.info/world-population/population-by-country/), which features up-to-date country population figures for 2024.
 
-![HTML table on the web page](https://brightdata.com/wp-content/uploads/2024/12/image-71-1024x670.png)
+![HTML table on the web page](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-71-2048x1341.png)
 
 To inspect the HTML table, right-click on it and select **Inspect**. This opens the Developer Tools panel, highlighting the corresponding HTML code:
 
-![Inspect element with selected element highlighted](https://brightdata.com/wp-content/uploads/2024/12/image-72-1024x576.png)
+![Inspect element with selected element highlighted](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-72-2048x1152.png)
 
 The table structure begins with a `<table>` tag (ID `example2`), contains header cells defined by `<th>` tags, and rows defined by `<tr>` tags. Within each row, `<td>` tags create individual cells that hold the data.
 
@@ -243,7 +243,7 @@ Next, use the `head()` method from pandas and `print()` to view the first te
 print(df.head(10))
 ```
 
-![Top ten rows from the scraped table](https://brightdata.com/wp-content/uploads/2024/12/image-73-1024x333.png)
+![Top ten rows from the scraped table](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-73-2048x665.png)
 
 ## Cleaning and Structuring the Data
 
@@ -277,7 +277,7 @@ print(df.head())
 
 The columns should now look like this:
 
-![Column names after renaming](https://brightdata.com/wp-content/uploads/2024/12/image-74-1024x186.png)
+![Column names after renaming](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-74-2048x371.png)
 
 ### Replacing Missing Values
 
@@ -308,7 +308,7 @@ This code removes the `%` sign from the values in the columns `Yearly Change 
 
 Your output should look like this:
 
-![Top five rows](https://brightdata.com/wp-content/uploads/2024/12/image-75-1024x186.png)
+![Top five rows](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-75-2048x371.png)
 
 ### Removing Commas and Convert Data Types
 
@@ -358,7 +358,7 @@ print(df.head(10))
 
 Your output should look like this:
 
-![Top ten rows of the cleaned data](https://brightdata.com/wp-content/uploads/2024/12/image-76-1024x333.png)
+![Top ten rows of the cleaned data](https://github.com/luminati-io/scrape-html-tables-python/blob/main/images/image-76-2048x665.png)
 
 ## Exporting Cleaned Data to CSV
 
